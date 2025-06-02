@@ -1,24 +1,9 @@
 replicaCount: 1
 image:
-  repository: cnmeow/vnplaterec-frontend
+  repository: giangttc/vnplaterec-frontend
   tag: "1748864665"
   pullPolicy: IfNotPresent
 containerPort: 3000
 service:
-  type: ClusterIP
+  type: LoadBalancer
   port: 80
-resources:
-  requests:
-    cpu: "100m"
-    memory: "128Mi"
-  limits:
-    cpu: "500m"
-    memory: "512Mi"
-livenessProbe:
-  path: /
-  initialDelaySeconds: 10
-  periodSeconds: 10
-readinessProbe:
-  path: /
-  initialDelaySeconds: 5
-  periodSeconds: 10
