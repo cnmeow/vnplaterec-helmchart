@@ -6,4 +6,4 @@ image:
 containerPort: 8080
 service:
   type: ClusterIP
-  port: 2106
+  port: 8080
