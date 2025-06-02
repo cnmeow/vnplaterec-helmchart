@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: cnmeow/vnplaterec-backend
-  tag: "1748882663"
+  tag: "1748884316"
   pullPolicy: IfNotPresent
 containerPort: 8080
 service:
