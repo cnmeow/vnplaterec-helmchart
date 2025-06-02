@@ -1,12 +1,9 @@
 replicaCount: 1
-
 image:
   repository: cnmeow/vnplaterec-backend
-  tag: latest
+  tag: "1748835811"
   pullPolicy: IfNotPresent
-
 containerPort: 8080
-
 service:
   type: ClusterIP
   port: 2106
