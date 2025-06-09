@@ -6,15 +6,15 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com:cnmeow/vnplaterec-helmchart.git 
+    repoURL: https://github.com/cnmeow/vnplaterec-helmchart
     targetRevision: HEAD
     path: services/backend/helm
     helm:
       valueFiles:
-        - clusters/prod/backend-values.yaml
+        - values.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: backend
+    namespace: default
   syncPolicy:
     automated:
       prune: true

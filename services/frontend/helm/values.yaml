@@ -4,7 +4,6 @@ image:
   tag: "1749466733"
   pullPolicy: IfNotPresent
 containerPort: 3000
-envConfigMap: frontend-env
 service:
   type: LoadBalancer
   port: 80
