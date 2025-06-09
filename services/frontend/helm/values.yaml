@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: giangttc/vnplaterec-frontend
-  tag: "1749116580"
+  tag: "1749466733"
   pullPolicy: IfNotPresent
 containerPort: 3000
 envConfigMap: frontend-env
